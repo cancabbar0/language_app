@@ -33,5 +33,5 @@ Django ile çoklu dil desteği ile kelime öğreten bir uygulama geliştirdim. U
 	python manage.py makemigrations
  	python manage.py migrate
 
-### Server'ı Çalıştır:
+### Server'ı Çalıştır:.
 	python manage.py runserver
