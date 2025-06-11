@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="{% static 'css/quizstyle.css' %}" rel="stylesheet" />
+</head>
+<body>
+    <div id="quiz-container" data-total-questions="{{ words|length }}">
+        <form id="quiz-form">
+            {% csrf_token %}
+            {% for word in words %}
+            <div class="question">
+                <p>{{ word.question }}</p>
+                <img src="{% static word.img %}" alt="Question Image">
+                <input type="hidden" name="question{{ forloop.counter }}" value="{{ word.question }}">
+                <label><input type="radio" name="answers{{ forloop.counter }}" value="{{ word.choices0 }}"> {{ word.choices0 }}</label><br>
+                <label><input type="radio" name="answers{{ forloop.counter }}" value="{{ word.choices1 }}"> {{ word.choices1 }}</label><br>
+                <label><input type="radio" name="answers{{ forloop.counter }}" value="{{ word.choices2 }}"> {{ word.choices2 }}</label><br>
+                <label><input type="radio" name="answers{{ forloop.counter }}" value="{{ word.choices3 }}"> {{ word.choices3 }}</label><br>
+                <label><input type="radio" name="answers{{ forloop.counter }}" value="{{ word.choices4 }}"> {{ word.choices4 }}</label><br>
+            </div>
+            {% endfor %}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{% static 'js/app/quiz.js' %}"></script>
+    <script src="{% static 'js/base/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/base/jquery-3.6.0.min.js' %}"></script>
+</body>
+</html>

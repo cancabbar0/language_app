@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Word</title>
+    <link href="{% static 'css/settingsandwords.css' %}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Add New Word</h1>
+    <form id="add-word-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- add_word.js dosyasını çağır -->
+    <script src="{% static 'js/app/add_word.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../assets/img/bg-masthead.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.vh-100 {
+    width: 40%;
+    height: 60%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+
+}
+h1 {
+    font-size: 2em;
+    margin: 0 30px 20px 0;
+    color: #717171;
+    z-index: 2;
+}
+
+form {
+    background-color: #D1D1D1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: box-shadow 0.2s;
+    z-index: 2;
+}
+
+form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ececec;
+}
+
+form button {
+    background-color: #002e6a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #011f50;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://wallpapers.com/images/featured/big-ben-6fh31pzs6p6ryz4k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #c6916d; /* SaddleBrown başlık rengi */
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+table {
+    width: 65%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fffaf0; /* FloralWhite tablo arka plan rengi */
+}
+
+thead {
+    background-color: #d2b48c; /* Tan başlık arka plan rengi */
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5dc; /* Beige arka plan rengi */
+}
+
+tbody tr:hover {
+    background-color: #eee8aa; /* PaleGoldenrod hover rengi */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #d2b48c; /* Tan düğme rengi */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b8860b; /* DarkGoldenrod hover rengi */
+}

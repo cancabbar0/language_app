@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://wallpapers.com/images/featured/big-ben-6fh31pzs6p6ryz4k.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  position: relative;
+}
+
+
+#quiz-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #baa07f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 20;
+}
+
+
+.question {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #baa07f;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #423e3e;
+  background-color: #bdaf98;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #ae9883;
+  border: 2px solid #ae9883;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease,  transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label:hover {
+  background-color: #9a836e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+button[type="submit"] {
+  background-color: #d69e2e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  background-color: #b58929;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 600px) {
+  #quiz-container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .question {
+    padding: 10px;
+  }
+}
+
+.question img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 19px auto;
+}

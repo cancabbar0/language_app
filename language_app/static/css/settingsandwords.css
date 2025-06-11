@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://wallpapers.com/images/featured/big-ben-6fh31pzs6p6ryz4k.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 30px 20px 0;
+    color: #918774;
+    z-index: 2;
+}
+
+form {
+    background-color: #baa07f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: box-shadow 0.2s;
+    z-index: 2;
+}
+
+form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #dfbf99;
+}
+
+form button {
+    background-color: #ac9c8d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #d9b99b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Report</title>
+    <link href="{% static 'css/analysis.css' %}" rel="stylesheet"/>
+</head>
+<body>
+<h1>Analysis Report</h1>
+<button type="button">Download Analysis Report</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>English</th>
+        <th>Turkish</th>
+        <th>In Sentence</th>
+        <th>Correct Count</th>
+        <th>Is Learned</th>
+        <th>Percent</th>
+    </tr>
+    </thead>
+    <tbody id="data-list">
+    {% for analisedata in analise_datas %}
+        <tr>
+        <td>{{ analisedata.english }}</td>
+        <td>{{ analisedata.turkish }}</td>
+        <td>{{ analisedata.in_sentence }}</td>
+        <td>{{ analisedata.corect_count }}</td>
+        <td>{{ analisedata.is_learned }}</td>
+        <td>{{ analisedata.percent }}</td>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
